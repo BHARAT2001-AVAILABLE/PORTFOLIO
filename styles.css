@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#home {
+    background: linear-gradient(to bottom right, #007bff, #6610f2);
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.skills-chart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.skill {
+    text-align: center;
+    width: 120px;
+}
+
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #e6e6e6;
+    stroke-width: 3.8;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 3.8;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+
+.circular-chart.html .circle {
+    stroke: #f16529;
+}
+
+.circular-chart.css .circle {
+    stroke: #2965f1;
+}
+
+.circular-chart.js .circle {
+    stroke: #f7df1e;
+}
+
+.circular-chart.terminal .circle {
+    stroke: #4caf50;
+}
+
+.circular-chart.bootstrap .circle {
+    stroke: #563d7c;
+}
+.circular-chart.SQL .circle {
+    stroke: violet;
+}
+.percentage {
+    font-size: 10px;
+    fill: #333;
+    text-anchor: middle;
+}
